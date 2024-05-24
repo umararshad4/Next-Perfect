@@ -18,7 +18,7 @@ const AppButton: React.FC<AppButtonProp> = ({
       endContent={endIcon && !isLoading && endIcon}
       onClick={onclick}
     >
-      {btnText}
+      {isLoading ? "Loading..." : btnText}
     </Button>
   );
 };
